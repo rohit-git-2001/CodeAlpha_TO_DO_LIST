@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Todo List</title>
+  </head>
+
+  <body>
+
+    <div id="info">
+        <p>Button <span>1</span> is stands for tasks completion within one month</p>
+        <p>Button <span>2</span> is stands for tasks completion within one week</p>
+        <p>Button <span>3</span> is stands for tasks completion within one day</p>
+    </div>
+    <h1 id="title">Todo List</h1>
+    <!-- Todo Container -->
+    <div id="todo-container">
+      <div id="input-box">
+        <input id="inputLine" type="text" placeholder="Write Your todos here"/>
+        <button id="addBtn" type="button">Add</button>
+      </div>
+
+      <div id="todo-chart">
+        <ol id="todo-ol">
+          <li class="todo-li">
+            <div class="todoLine">
+              <p>CodeAlpha Internship</p>
+              <button class="del">Del</button>
+            </div>
+            <div id="importance">
+              <button class="btn">1</button>
+              <button class="btn">2</button>
+              <button class="btn">3</button>
+              <p class="btnInfo">Information</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

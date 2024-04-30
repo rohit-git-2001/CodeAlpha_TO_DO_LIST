@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-color: #303f47;
+  color: #fff;
+  position: relative;
+  user-select: none;
+}
+
+#info {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 7px;
+  p{
+    margin: 10px auto;
+    font-size: 1.2rem;
+    span{
+      color: cornflowerblue;
+      user-select: none;
+    }
+  }
+}
+
+#title{
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* Todo Container */
+
+#todo-container{
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    #input-box{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 10px;
+        input{
+            font-size: 1.4rem;
+            width: 78%;
+            padding: 10px;
+            border-radius: 7px;
+            border: 0;
+            &:focus{
+              outline: 0;
+            }
+        }
+        button{
+            width: 20%;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+    }
+
+    #todo-chart{
+        font-size: 1.4rem;
+        .todo-li {
+          background-color: black;
+          border-radius: 7px;
+          margin-bottom: 5px;
+        }
+        div{
+          width: 100%;
+          display: flex;
+          line-height: 50px;
+          /* border: 1px solid red; */
+          padding: 10px;
+          button{
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            margin-left: 10px;
+            align-items: flex-end;
+            font-weight: bold;
+            font-size: 1.1rem;
+          }
+          .btnInfo {
+            margin-left: 480px;
+            cursor: pointer;
+            &:hover{
+              color: cornflowerblue;
+            }
+          }
+        }
+    }
+}
+
+.todoLine{
+  border-radius: 7px 7px 0 0;
+}
